@@ -47,7 +47,7 @@ public class SecurityConfig {
                                 "/v3/api-docs/**",
                                 "/swagger-ui/**",
                                 "/swagger-ui.html",
-                                "/favicon.ico" // <-- optional but silences a 403 on favicon
+                                "/favicon.ico"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
