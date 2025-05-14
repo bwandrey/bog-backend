@@ -37,7 +37,7 @@ public class AuthController {
         }
 
         String jwt = jwtUtil.generateToken(authRequest.getUsername());
-        return ResponseEntity.ok(Map.of("token", jwt)); // ✅ wrap the token in a JSON object
+        return ResponseEntity.ok(Map.of("token", jwt));
     }
 
 }
